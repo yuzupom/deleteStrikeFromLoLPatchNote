@@ -1,0 +1,13 @@
+{
+    "name": "LoLのパッチノートから打ち消し線を消すやつ",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "LoLのパッチノートで変更前の数値に引かれた打ち消し線を消します",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["https://www.leagueoflegends.com/*/patch-*-*-notes/"],
+            "css": ["css/overwrite.css"]
+        }
+    ]
+}
